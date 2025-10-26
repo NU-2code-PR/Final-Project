@@ -7,56 +7,52 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <section id="landing">
-      <nav>
-        <div class="nav__row">
-          <div class="nav__logo">
+    <nav class="nav__container">
+      <div class="nav__row">
+        <div class="nav__logo">
+          <img
+            class="nav__pic"
+            src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+          /><span class="bold">Treact</span>
+        </div>
+        <ul class="nav__links">
+          <li><a href="#" class="nav__link">About</a></li>
+          <li><a href="#" class="nav__link">Blog</a></li>
+          <li><a href="#" class="nav__link">Pricing</a></li>
+          <li><a href="#" class="nav__link">Contact Us</a></li>
+          <li><a href="#" class="nav__link">Login</a></li>
+          <button class="nav__btn">Sign Up</button>
+        </ul>
+      </div>
+    </nav>
+    <section id="top">
+      <div class="container__left">
+        <div class="row__left">
+          <h1 class="title">
+            Beautiful React Templates <span class="purple">for you.</span>
+          </h1>
+          <p class="para__left">
+            Our templates are easy to setup, understand and customize. Fully
+            modular components with a variety of pages and components.
+          </p>
+          <form action="/submit-form" method="post">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your E-mail Address"
+            />
+            <button class="email__btn" type="submit">Get Started</button>
+          </form>
+          <div>
+            <p class="logo__left">OUR TRUSTED CUSTOMERS</p>
             <img
-              class="nav__pic"
-              src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
-            /><span class="bold">Treact</span>
-          </div>
-          <ul class="nav__links">
-            <li><a href="#" class="nav__link">About</a></li>
-            <li><a href="#" class="nav__link">Blog</a></li>
-            <li><a href="#" class="nav__link">Pricing</a></li>
-            <li><a href="#" class="nav__link">Contact Us</a></li>
-            <li><a href="#" class="nav__link">Login</a></li>
-            <button class="nav__btn">Sign Up</button>
-          </ul>
-        </div>
-      </nav>
-      <header>
-        <div class="container__left">
-          <div class="row__left">
-            <h1 class="title">
-              Beautiful React Templates <span class="purple">for you.</span>
-            </h1>
-            <p class="para__left">
-              Our templates are easy to setup, understand and customize. Fully
-              modular components with a variety of pages and components.
-            </p>
-            <form
-              action="/submit-form" method="post">
-              <input type="email" id="email" name="email" placeholder="Your E-mail Address" />
-              <button class="email__btn" type="submit">Get Started</button>
-            </form>
-            <div>
-              <p class="logo__left">OUR TRUSTED CUSTOMERS</p>
-              <img
-                class="logo__left-img"
-                src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
-              />
-            </div>
-            <div>
-              <img
-                class="right__img"
-                src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
-              />
-            </div>
+              class="logo__left-img"
+              src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+            />
           </div>
         </div>
-      </header>
+      </div>
     </section>
   </body>
 </html>
