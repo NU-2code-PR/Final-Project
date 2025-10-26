@@ -34,33 +34,33 @@ p {
 /*NAV*/
 
 .nav__container {
-    padding: 32px;
+    padding: 32px 32px 0 32px;
 }
+
 
 .nav__row {
+    height: 44px;
     width: 100%;
     max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
     margin: 0 auto;
-}
-
-.nav__link {
-    color: #243E63;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
 }
 
+
 .nav__links {
-    margin: 0 24px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     display: flex;
 }
 
-.nav__links:hover {
+.nav__link {
+    margin: 0 24px;
+    color: #243E63;
+}
+
+.nav__link:hover {
     text-decoration: underline;
 }
 
@@ -85,32 +85,89 @@ p {
     padding: 12px 32px;
     border: none;
     border-radius: 24px;
+    transition: 300ms ease;
+}
+
+.nav__btn:hover {
+    background-color: #4b08d3;
+    text-decoration: none;
 }
 
 
 /*LEFT
 */
 
+#top {
+    padding: 96px 32px 96px 32px;
+}
 
-
+.row__left{
+    padding: 32px 0 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .container__left {
     width: 40%;
+    max-height: 1200px;
     display: flex;
-    
 }
 
 .logo__left-img {
     width: 100%;
     height: 32px;
     margin: 16px 0px 0px;
-    padding: 0px 64px 0px 0px;
+}
+
+.para__left {
+    margin: 32px 0 32px 0;
+}
+
+.p__left {
+    width: 60%;
+    padding-top: 80px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #A0AEC0;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 64px;
+    padding: 1px 2px;
 }
 
 
-.logo__left {
-    width: 60%;
-    font-size: 12px;
-    color: #A0AEC0;
+#email {
+    width: 100%;
+    height: 24px;
+    font-size: 16px;
+    color: #b0b6beea;
+    text-align: center;
+    display: inline-block;
+    border: none;
+}
+
+
+.email__btn {
+    width: 55%;
+    color: #F7FAFC;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #6415ff;
+    margin: 8px 8px 8px 0px;
+    padding: 16px 0px;
+    border-radius: 64px;
+    display: inline-block;
+    border: none;
+    transition: 330ms ease;
+}
+
+.email__btn:hover {
+    background-color: #4b08d3;
 }
 
 
