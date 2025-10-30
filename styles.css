@@ -12,7 +12,10 @@ html {
 
 body {
   max-height: 100vh;
-  overflow: hidden;
+}
+
+.container {
+  padding: 96px 0px;
 }
 
 nav {
@@ -136,9 +139,6 @@ li {
 HEAD
 */
 
-.header__container {
-  padding: 96px 0px;
-}
 
 h1 {
   font-size: 48px;
@@ -255,3 +255,4 @@ h1 {
   width: 100%;
   max-width: 768px;
 }
+
