@@ -261,7 +261,8 @@ Features
 
 */
 
-#features, #quality {
+#features,
+#quality {
   margin: 0 32px;
 }
 
@@ -326,8 +327,6 @@ Features
   padding: 32px 24px;
   margin: 0 auto;
 }
-
-
 
 .feature__title {
   font-size: 24px;
@@ -443,7 +442,6 @@ section#steps {
   margin: 0 32px;
 }
 
-
 .step__row {
   width: 100%;
   max-width: 1200px;
@@ -474,14 +472,14 @@ section#steps {
   height: 10rem;
   opacity: 0.8;
   z-index: -10;
-  color: rgb(100, 21, 255); 
+  color: rgb(100, 21, 255);
   fill: currentColor;
 }
 
 .step {
-display: flex;
-align-items: flex-start;
-margin-top: 32px;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 32px;
 }
 
 .steps__info {
@@ -489,7 +487,6 @@ margin-top: 32px;
   max-width: 320px;
   display: flex;
   flex-direction: column;
- 
 }
 
 .steps__title {
@@ -532,7 +529,7 @@ VALUES
 
 .values__info {
   width: 50%;
-  padding-right: 42px;
+  padding-right: 32px;
 }
 
 .section__para {
@@ -542,19 +539,17 @@ VALUES
   line-height: 1.625;
 }
 
-.value__img {
-  background-color: ;
-}
+
 
 .value__list {
-display: flex;
+  display: flex;
 }
 
 .value__name {
- font-size: 20px;
- font-weight: 700;
- color: #243e63;
- margin: 0 0 0 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #243e63;
+  margin: 0 0 0 12px;
 }
 
 .value__para {
@@ -563,6 +558,25 @@ display: flex;
   margin: 16px 0 0;
   line-height: 1.62;
 }
+
+.value__btn {
+  width: 25%;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #6415ff;
+  margin: 32px 12px 0 0;
+  padding: 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 64px;
+  transition: all 300ms ease;
+}
+
+.value__btn:hover {
+  background-color: rgba(80, 17, 204);
+}
+
 
 .value:nth-of-type(1) {
   margin-top: 32px;
@@ -597,7 +611,7 @@ Pricing
 
 */
 
-.section__tag--price{
+.section__tag--price {
   font-size: 16px;
   color: #6415ff;
   font-weight: 700;
@@ -606,13 +620,11 @@ Pricing
   text-transform: uppercase;
 }
 
-
 .price__row {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
-
 
 .price__para {
   font-size: 18px;
@@ -628,12 +640,12 @@ Pricing
   margin-top: 38px;
 }
 
-
 .pricing__table {
   display: flex;
 }
 
 .plan {
+  position: relative;
   margin-top: 64px;
   display: flex;
   width: 100%;
@@ -651,41 +663,75 @@ Pricing
     rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
+
+.plans__blob {
+  z-index: -10;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-50%) translateY(50%) scaleX(1) scaleY(1);
+  height: 256px;
+  width: 256px;
+  opacity: 0.25;
+}
+
 .top {
   margin: 32px 0;
 }
 
 .h3 {
   font-size: 20px;
-  margin-bottom: 8px;
 }
 
 .price {
   font-size: 48px;
   font-weight: 700;
-  color:#1a202c;
+  color: #1a202c;
   margin: 4px 0;
 }
 
 .titles {
   font-size: 20px;
   font-weight: 700;
-  color: #1a202c;  
-  margin: 20px;
+  color: #1a202c;
   line-height: 2.5;
 }
 
 .time {
-  margin-top: 32px;
-  font-size: 16px;
+  margin-top: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #a0aec0;
 }
 
 .traits {
   flex-direction: column;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #718096;
-  margin-top: 20px;
+  line-height: 2.5;
+  margin-bottom: 16px;
 }
+
+.buy__btn {
+  align-self: center;
+  border: none;
+  border-radius: 64px;
+  background-color: rgb(100 21 255);
+  font-weight: 700;
+  cursor: pointer;
+  color: rgb(247 250 252);
+  transition: all 300ms ease;
+  width: 75%;
+  padding: 16px;
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+
+.buy__btn:hover {
+  transform: translate(1px, -1px);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
